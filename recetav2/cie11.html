@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://icdcdn.who.int/embeddedct/icd11ect-1.5.css">
+    <link rel="stylesheet" href="cie11.css">
+    <title>v1.5</title>
+
+
+
+</head>
+
+<body>
+
+    
+
+    <!-- example of an extra input element for testing the Embedded Coding Tool select entity function -->
+    <br>
+    Diagnostico:<samp id="paste-selectedEntityTxt" ></samp> 
+    <br> 
+    CIE: <samp id="paste-selectedEntity" ></samp>  
+  
+    <!--Código CIE: <input type="text" id="paste-selectedEntity" value=""> 
+    Texto CIE: <input type="text" id="paste-selectedEntityTxt" value=""> 
+    -->
+    <p>
+        <br>   <br> 
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Codificación CIE - 11
+        </button>
+      </p>
+    
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            Diagnostico: 
+            <!-- input element used for typing the search  -->
+            <input type="text" class="ctw-input" autocomplete="on" data-ctw-ino="1"> 
+        
+            <!-- div element used for showing the search results -->
+            <div class="ctw-window" data-ctw-ino="1"></div>
+        </div>
+      </div>
+    
+    
+    
+      <script src="https://icdcdn.who.int/embeddedct/icd11ect-1.5.js"></script>
+    <script>
+        // Embedded Coding Tool settings object
+        // please note that only the property "apiServerUrl" is required
+        // the other properties are optional
+        const mySettings = {
+            // The API located at the URL below should be used only for software
+            // development and testing. ICD content at this location might not
+            //  be up to date or complete. For production, use the API located at
+            // id.who.int with proper OAUTH authentication
+            apiServerUrl: "https://icd11restapi-developer-test.azurewebsites.net",  
+            language: "es",
+            //simplifiedMode: true,
+            wordsAvailable: true,  
+            flexisearchAvailable: false
+        };
+
+        // example of an Embedded Coding Tool using the callback selectedEntityFunction 
+        // for copying the code selected in an <input> element and clear the search results
+        const myCallbacks = {
+            selectedEntityFunction: (selectedEntity) => { 
+                // paste the code into the <input>
+                //document.getElementById('paste-selectedEntity').value = selectedEntity.code; 
+                document.getElementById('paste-selectedEntity').innerHTML = selectedEntity.code; 
+                //document.getElementById('paste-selectedEntityTxt').value = selectedEntity.selectedText;        
+                document.getElementById('paste-selectedEntityTxt').innerHTML = selectedEntity.selectedText;        
+                // clear the searchbox and delete the search results
+                ECT.Handler.clear("1")    
+            }
+        };
+
+        // configure the ECT Handler with mySettings and myCallbacks
+        ECT.Handler.configure(mySettings, myCallbacks);
+        
+    </script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>

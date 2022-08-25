@@ -1,0 +1,49 @@
+.ectComponent #statusFlexContainer {
+    display: none;
+}
+.ectComponent .searchresults h4 {
+    display: none;
+}
+.ectComponent .chopped {
+    color: #00d420;
+}
+.ectComponent .listhead {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.ectComponent .listhead {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.ectComponent .entitylist em.found, .ectComponent .entitylist em.found em.wbe {
+    font-weight: 700;
+    font-style: normal;
+    color: #000;
+}
+.ectComponent .entitylist em.nonwbe {
+    font-weight: 400;
+    font-style: normal;
+    color: #7f7e7e;
+}
+.ectComponent .wordlist ul {
+    list-style: none;
+    margin-left: -30px;
+}
+.ectComponent .sortoption {
+    position: relative;
+    float: right;
+    font-size: .6em;
+    color: #4169e1;
+}
+.ectComponent .pacolor {
+    display: none;
+}
+.ectComponent .mlcolor {
+    display: none;
+}
+.ectComponent .plcolor {
+    display: none;
+}

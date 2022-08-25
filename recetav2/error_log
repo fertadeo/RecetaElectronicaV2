@@ -1,0 +1,35 @@
+[09-May-2022 16:04:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function oci_connect() in /home/recetacmpcorg/public_html/conexion_oracle2.php:3
+Stack trace:
+#0 /home/recetacmpcorg/public_html/index.php(13): include()
+#1 {main}
+  thrown in /home/recetacmpcorg/public_html/conexion_oracle2.php on line 3
+[09-May-2022 16:05:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function oci_connect() in /home/recetacmpcorg/public_html/conexion_oracle2.php:3
+Stack trace:
+#0 /home/recetacmpcorg/public_html/index.php(13): include()
+#1 {main}
+  thrown in /home/recetacmpcorg/public_html/conexion_oracle2.php on line 3
+[09-May-2022 16:05:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function oci_connect() in /home/recetacmpcorg/public_html/conexion_oracle2.php:3
+Stack trace:
+#0 /home/recetacmpcorg/public_html/index.php(13): include()
+#1 {main}
+  thrown in /home/recetacmpcorg/public_html/conexion_oracle2.php on line 3
+[09-May-2022 16:24:54 UTC] PHP Warning:  Undefined variable $firma in /home/recetacmpcorg/public_html/index.php on line 439
+[09-May-2022 16:28:44 UTC] PHP Warning:  Undefined variable $firma in /home/recetacmpcorg/public_html/index.php on line 439
+[09-May-2022 16:29:06 UTC] PHP Warning:  Undefined variable $firma in /home/recetacmpcorg/public_html/index.php on line 439
+[09-May-2022 16:31:28 UTC] PHP Warning:  Undefined variable $firma in /home/recetacmpcorg/public_html/index.php on line 439
+[09-May-2022 16:37:25 UTC] PHP Warning:  Undefined variable $firma in /home/recetacmpcorg/public_html/index.php on line 439
+[09-May-2022 16:40:19 UTC] PHP Warning:  Undefined variable $firma in /home/recetacmpcorg/public_html/index.php on line 441
+[09-May-2022 16:44:36 UTC] PHP Warning:  Undefined variable $firma in /home/recetacmpcorg/public_html/index.php on line 441
+[09-May-2022 16:48:06 UTC] PHP Warning:  Undefined variable $firma in /home/recetacmpcorg/public_html/index.php on line 441
+[09-May-2022 16:53:37 UTC] PHP Warning:  Undefined variable $nombre in /home/recetacmpcorg/public_html/index.php on line 313
+[09-May-2022 16:53:37 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/recetacmpcorg/public_html/index.php on line 313
+[09-May-2022 18:30:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function oci_connect() in /home/recetacmpcorg/public_html/conexion_oracle2.php:3
+Stack trace:
+#0 /home/recetacmpcorg/public_html/index.php(14): include()
+#1 {main}
+  thrown in /home/recetacmpcorg/public_html/conexion_oracle2.php on line 3
+[09-May-2022 18:32:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function oci_connect() in /home/recetacmpcorg/public_html/conexion_oracle2.php:3
+Stack trace:
+#0 /home/recetacmpcorg/public_html/index.php(14): include()
+#1 {main}
+  thrown in /home/recetacmpcorg/public_html/conexion_oracle2.php on line 3

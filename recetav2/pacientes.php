@@ -52,6 +52,7 @@ include('template/head.php');
         <th scope="col">Médico</th>
         <th scope="col">Diagnóstico</th>
         <th scope="col">Acción</th>
+        <th scope="col">Receta</th>
       </tr>
     </thead>
     <tbody id="contenidoTabla">
@@ -144,7 +145,7 @@ function buscarDni(){
                     const fechaDeJson = new Date(x.fechaemision);
                     const fechaFormateada = formatearFecha(fechaDeJson);
                     //console.log(fechaFormateada);
-                    itemHtmlSi  += `<tr><td scope="row">`+x.idreceta+`</td><td>`+fechaFormateada+`</td><td>`+x.apellido+` `+x.nombre+`</td><td>`+x.diagnostico+`</td><td><button type="button" class="btn btn-outline-success mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="`+x.idreceta+`">ver</button></td></tr>`;
+                    itemHtmlSi  += `<tr><td scope="row">`+x.idreceta+`</td><td>`+fechaFormateada+`</td><td>`+x.apellido+` `+x.nombre+`</td><td>`+x.diagnostico+`</td><td><button type="button" class="btn btn-outline-success mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="`+x.idreceta+`">ver</button><button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"> Ver receta</button></td> </tr>`;
                  }
                 console.log("Acaaaaa "+itemHtmlSi);
                 document.getElementById("VentPaciente").style.display = "block";
